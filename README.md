@@ -6,6 +6,8 @@ An incident room for declaring impact, coordinating a response, and preserving a
 
 The interface uses a charcoal-and-citron response desk: service status strip, response queue, a central event log, and a contextual playbook. There are no invented uptime percentages or simulated live telemetry. All initial services and incidents are fictional demo records.
 
+![Application screenshot](docs/images/dashboard.png)
+
 ## Run
 
 Node 22.13 or newer:

@@ -1,5 +1,6 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
+import { useDialog } from './use-dialog';
 import { ArrowUpRight, Plus, Radio, RefreshCw, Search, Terminal, X } from 'lucide-react';
 import { request } from '@/lib/client';
 import { stages, type Incident, type services as serviceType } from '@/lib/model';
@@ -29,6 +30,8 @@ export default function Room() {
     [error, setError] = useState(''),
     [busy, setBusy] = useState(false),
     [adding, setAdding] = useState(false);
+  const closeDialog = useCallback(() => setAdding(false), []);
+  useDialog(adding, closeDialog);
   async function refresh() {
     const r = await request<{ dashboard: Data }>(query);
     setData(r.dashboard);
