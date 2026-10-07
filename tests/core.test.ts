@@ -11,6 +11,7 @@ test('incident lifecycle, stale write rejection, immutable closure and workspace
     w = crypto.randomUUID(),
     other = crypto.randomUUID();
   const api = createApi();
+  await api.start();
   try {
     await s.initialize(w);
     await s.initialize(other);
