@@ -105,7 +105,6 @@ export default function Room() {
       </div>
       <section className="intro">
         <div>
-          <p className="eyebrow">OBSERVE. COORDINATE. RECOVER.</p>
           <h1>
             When things break,
             <br />
@@ -113,7 +112,6 @@ export default function Room() {
           </h1>
         </div>
         <div className="intro-note">
-          <span>01 / OPERATIONS</span>
           <p>
             A shared record of what happened,
             <br />
@@ -353,7 +351,6 @@ export default function Room() {
             </section>
           )}
           <aside className="runbook">
-            <span className="eyebrow">THE RESPONSE PLAYBOOK</span>
             <h2>
               Steady hands.
               <br />
@@ -387,7 +384,6 @@ export default function Room() {
         </div>
       )}
       <footer>
-        <span>SIGNAL / BUILT FOR THE MOMENT THAT MATTERS</span>
         <span>{data?.storageMode ?? 'Connecting'} · Cookie-scoped demo</span>
       </footer>
       {adding && (
@@ -400,7 +396,7 @@ export default function Room() {
             >
               <X />
             </button>
-            <p className="eyebrow">OPEN A RESPONSE ROOM</p>
+
             <h2>Declare an incident.</h2>
             {error && <p className="error">{error}</p>}
             <form
