@@ -112,7 +112,6 @@ export default function Room() {
           </h1>
         </div>
         <div className="intro-note">
-
           <p>
             A shared record of what happened,
             <br />
@@ -385,7 +384,6 @@ export default function Room() {
         </div>
       )}
       <footer>
-
         <span>{data?.storageMode ?? 'Connecting'} · Cookie-scoped demo</span>
       </footer>
       {adding && (
